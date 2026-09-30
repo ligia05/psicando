@@ -1,0 +1,608 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #37443d;
+  background-color: #ffffff;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e7e2;
+}
+
+.conteudo-cabecalho {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo h2 {
+  color: #376a59;
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+}
+
+.logo p {
+  margin-top: 3px;
+  color: #8b918c;
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.menu a {
+  color: #59635e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #286450;
+}
+
+.botao-cabecalho {
+  background-color: #326d59;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  padding: 13px 21px;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+/* INÍCIO */
+
+.inicio {
+  width: 100%;
+  background-color: #f2eee3;
+}
+
+.conteudo-inicio {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: auto;
+
+  display: flex;
+
+  min-height: 510px;
+}
+
+.texto-inicio {
+  width: 48%;
+
+  padding-left: 7%;
+  padding-right: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.texto-destaque {
+  margin-bottom: 16px;
+
+  color: #668073;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.texto-inicio h1 {
+  max-width: 550px;
+
+  color: #315f50;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 53px;
+  line-height: 1.08;
+
+  margin-bottom: 23px;
+}
+
+.descricao-inicio {
+  max-width: 530px;
+
+  margin-bottom: 10px;
+
+  color: #626b66;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.botoes-inicio {
+  margin-top: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.botao-teste {
+  padding: 15px 25px;
+
+  background-color: #2f705a;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-teste:hover {
+  background-color: #245946;
+}
+
+.botao-terapias {
+  padding: 14px 24px;
+
+  color: #326d59;
+  background-color: transparent;
+
+  border: 1px solid #81988e;
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.botao-terapias:hover {
+  background-color: #ffffff;
+}
+
+.imagem-inicio {
+  width: 52%;
+  min-height: 510px;
+}
+
+.imagem-inicio img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* TESTE */
+
+.teste {
+  width: 100%;
+
+  padding: 80px 5%;
+
+  background-color: #3d725f;
+}
+
+.conteudo-teste {
+  width: 90%;
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.texto-teste {
+  width: 60%;
+  color: #ffffff;
+}
+
+.texto-teste .titulo-pequeno {
+  color: #dbe9df;
+}
+
+.texto-teste h2 {
+  max-width: 700px;
+
+  margin-top: 10px;
+  margin-bottom: 22px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.texto-teste p {
+  margin-bottom: 12px;
+
+  line-height: 1.7;
+
+  color: #f2f6f3;
+}
+
+.texto-teste .aviso {
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  color: #d9e4de;
+}
+
+.caixa-iniciar-teste {
+  width: 340px;
+
+  padding: 35px;
+
+  background-color: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 12px 30px rgba(30, 65, 52, 0.22);
+}
+
+.caixa-iniciar-teste p {
+  color: #748078;
+
+  font-size: 13px;
+
+  margin-bottom: 10px;
+}
+
+.caixa-iniciar-teste h3 {
+  color: #315f50;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.35;
+
+  margin-bottom: 24px;
+}
+
+.caixa-iniciar-teste button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #326d59;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.caixa-iniciar-teste button:hover {
+  background-color: #245946;
+}
+
+/* TERAPIAS */
+
+.terapias {
+  width: 100%;
+
+  padding: 80px 5%;
+
+  background-color: #fafafa;
+}
+
+.conteudo-terapias {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.cabecalho-terapias {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 45px auto;
+}
+
+.titulo-pequeno {
+  color: #668073;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.cabecalho-terapias h2 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+  color: #315f50;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+}
+
+.cabecalho-terapias p {
+  color: #6b746f;
+
+  line-height: 1.6;
+}
+
+.lista-terapias {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 22px;
+}
+
+.cartao-terapia {
+  width: calc(25% - 17px);
+
+  min-height: 275px;
+
+  padding: 25px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e8ebe8;
+  border-radius: 13px;
+
+  box-shadow: 0 4px 14px rgba(45, 75, 63, 0.05);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-terapia:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 9px 24px rgba(45, 75, 63, 0.1);
+}
+
+.icone-terapia {
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 17px;
+
+  border-radius: 50%;
+
+  background-color: #edf4ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.cartao-terapia h3 {
+  color: #326451;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+
+  margin-bottom: 13px;
+}
+
+.cartao-terapia p {
+  color: #6c746f;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cartao-terapia a {
+  margin-top: auto;
+  padding-top: 18px;
+
+  color: #34705a;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* SOBRE */
+
+.sobre {
+  padding: 85px 5%;
+
+  background-color: #f2eee3;
+}
+
+.conteudo-sobre {
+  width: 90%;
+  max-width: 800px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.conteudo-sobre h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  color: #315f50;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+}
+
+.conteudo-sobre p {
+  color: #68716c;
+
+  line-height: 1.7;
+}
+
+/* RODAPÉ */
+
+.rodape {
+  padding: 50px 5%;
+
+  background-color: #315f50;
+
+  color: #ffffff;
+}
+
+.conteudo-rodape {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.conteudo-rodape h3 {
+  margin-bottom: 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+}
+
+.conteudo-rodape p {
+  max-width: 450px;
+
+  color: #dce8e2;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+.duvida {
+  margin-top: 40px;
+
+  color: #315f50;
+
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.botao-duvidas {
+  width: 160px;
+
+  margin: 20px auto 60px auto;
+  padding: 13px 21px;
+
+  display: block;
+
+  background-color: #326d59;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.botao-duvidas:hover {
+  background-color: #245946;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+  .menu {
+    display: none;
+  }
+
+  .conteudo-inicio {
+    flex-direction: column;
+  }
+
+  .texto-inicio {
+    width: 100%;
+
+    padding: 65px 7%;
+  }
+
+  .imagem-inicio {
+    width: 100%;
+
+    height: 420px;
+    min-height: 0;
+  }
+
+  .conteudo-teste {
+    flex-direction: column;
+  }
+
+  .texto-teste {
+    width: 100%;
+  }
+
+  .caixa-iniciar-teste {
+    width: 100%;
+  }
+
+  .cartao-terapia {
+    width: calc(50% - 11px);
+  }
+}
+
+@media (max-width: 600px) {
+  .botao-cabecalho {
+    display: none;
+  }
+
+  .texto-inicio h1 {
+    font-size: 39px;
+  }
+
+  .botoes-inicio {
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+  }
+
+  .botao-teste,
+  .botao-terapias {
+    text-align: center;
+  }
+
+  .imagem-inicio {
+    height: 300px;
+  }
+
+  .cartao-terapia {
+    width: 100%;
+  }
+
+  .texto-teste h2,
+  .cabecalho-terapias h2,
+  .conteudo-sobre h2 {
+    font-size: 30px;
+  }
+}

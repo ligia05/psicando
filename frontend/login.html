@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login do Administrador</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <h1>Área do Administrador</h1>
+
+    <form id="loginForm">
+
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required autocomplete="username">
+
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required autocomplete="current-password">
+
+        <br><br>
+
+        <p id="mensagem"></p>
+
+        <button type="submit">Entrar</button>
+
+    </form>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

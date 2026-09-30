@@ -1,0 +1,13 @@
+node_modules/
+npm-debug.log
+# Build/Dist
+dist/
+build/
+
+# Configurações locais
+.env
+.DS_Store
+
+# Uploads e imagens grandes
+uploads/
+imagens_grandes/

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #37443d;
+  background-color: #ffffff;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #e7e7e2;
+}
+
+.conteudo-cabecalho {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #376a59;
+
+  font-size: 27px;
+}
+
+.logo p {
+  margin-top: 3px;
+
+  color: #8b918c;
+
+  font-size: 12px;
+}
+
+/* TOPO DA PÁGINA */
+
+.topo-terapia {
+  width: 100%;
+
+  padding: 85px 5%;
+
+  background-color: #f2eee3;
+}
+
+.conteudo-topo-terapia {
+  width: 90%;
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.titulo-pequeno {
+  margin-bottom: 12px;
+
+  color: #668073;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.conteudo-topo-terapia h1 {
+  margin-bottom: 25px;
+
+  color: #315f50;
+
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.introducao-terapia {
+  max-width: 750px;
+
+  margin: auto;
+
+  color: #66706b;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* CONTEÚDO */
+
+.conteudo-terapia {
+  width: 100%;
+
+  padding: 80px 5%;
+}
+
+.texto-terapia {
+  width: 90%;
+  max-width: 800px;
+
+  margin: auto;
+}
+
+.texto-terapia h2 {
+  margin-top: 55px;
+  margin-bottom: 20px;
+
+  color: #315f50;
+
+  font-size: 28px;
+}
+
+.texto-terapia h2:first-child {
+  margin-top: 0;
+}
+
+.texto-terapia p {
+  margin-bottom: 20px;
+
+  color: #626b66;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* AVISO */
+
+.aviso-terapia {
+  margin-top: 55px;
+
+  padding: 30px;
+
+  background-color: #edf4ef;
+
+  border-left: 5px solid #326d59;
+
+  border-radius: 8px;
+}
+
+.aviso-terapia h3 {
+  margin-bottom: 12px;
+
+  color: #315f50;
+
+  font-size: 20px;
+}
+
+.aviso-terapia p {
+  margin-bottom: 0;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+  .topo-terapia {
+    padding: 60px 5%;
+  }
+
+  .conteudo-topo-terapia h1 {
+    font-size: 36px;
+  }
+
+  .conteudo-terapia {
+    padding: 60px 5%;
+  }
+
+  .texto-terapia {
+    width: 100%;
+  }
+
+  .texto-terapia h2 {
+    font-size: 25px;
+  }
+}
