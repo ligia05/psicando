@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+    <!-- CABEÇALHO -->
     <header class="cabecalho">
 
         <div class="conteudo-cabecalho">
@@ -22,17 +24,6 @@
                 <p>psicologia que acolhe</p>
             </div>
 
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#teste">Teste</a>
-                <a href="#terapias">Terapias</a>
-                <a href="#sobre">Sobre</a>
-            </nav>
-
-            <a href="#teste" class="botao-cabecalho">
-                Descubra sua terapia
-            </a>
-
         </div>
 
     </header>
@@ -40,6 +31,7 @@
 
     <main>
 
+        <!-- INÍCIO -->
         <section class="inicio" id="inicio">
 
             <div class="conteudo-inicio">
@@ -47,42 +39,30 @@
                 <div class="texto-inicio">
 
                     <p class="texto-destaque">
-                        Psicologia para diferentes formas de viver
+                        Cuidar da mente também é cuidar de você
                     </p>
 
                     <h1>
-                        Encontre o caminho
-                        para o seu bem-estar
+                        A terapia pode fazer parte do cuidado com a sua saúde mental
                     </h1>
 
                     <p class="descricao-inicio">
-                        A psicologia oferece diferentes caminhos para compreender
-                        emoções, pensamentos, comportamentos e relações.
+                        Fazer terapia ainda pode ser um tabu, mas procurar ajuda
+                        não precisa acontecer apenas quando tudo parece difícil demais.
                     </p>
 
                     <p class="descricao-inicio">
-                        Descubra quais abordagens terapêuticas podem combinar mais
-                        com aquilo que você procura.
+                        A psicoterapia pode ajudar a compreender emoções, enfrentar
+                        mudanças e conflitos, reconhecer padrões e desenvolver novas
+                        formas de lidar com os desafios da vida.
                     </p>
-
-                    <div class="botoes-inicio">
-
-                        <a href="#teste" class="botao-teste">
-                            Fazer o teste
-                        </a>
-
-                        <a href="#terapias" class="botao-terapias">
-                            Conhecer as terapias
-                        </a>
-
-                    </div>
 
                 </div>
 
 
                 <div class="imagem-inicio">
 
-                    <img src="/frontend/imagens/sofa.png" alt="Poltrona em ambiente acolhedor de psicologia">
+                    <img src="/frontend/imagens/sofa.png" alt="Poltrona em um ambiente tranquilo e acolhedor">
 
                 </div>
 
@@ -91,59 +71,11 @@
         </section>
 
 
-        <section class="teste" id="teste">
-
-            <div class="conteudo-teste">
-
-                <div class="texto-teste">
-
-                    <p class="titulo-pequeno">
-                        Não sabe por onde começar?
-                    </p>
-
-                    <h2>
-                        Descubra qual abordagem terapêutica pode combinar com você
-                    </h2>
-
-                    <p>
-                        Responda algumas perguntas sobre como você prefere conversar,
-                        compreender seus problemas e trabalhar suas emoções.
-                    </p>
-
-                    <p>
-                        Ao final, você verá quais abordagens apresentam maior
-                        compatibilidade com aquilo que procura em uma terapia.
-                    </p>
-
-                    <p class="aviso">
-                        O resultado é apenas informativo e não substitui a avaliação
-                        de um profissional de psicologia.
-                    </p>
-
-                </div>
+        <!-- FAIXA VERDE DECORATIVA -->
+        <div class="faixa-verde" aria-hidden="true"></div>
 
 
-                <div class="caixa-iniciar-teste">
-
-                    <p>
-                        Leva poucos minutos.
-                    </p>
-
-                    <h3>
-                        Encontre um ponto de partida para escolher sua terapia.
-                    </h3>
-
-                    <button id="botao-iniciar-teste">
-                        Começar o teste
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
+        <!-- TERAPIAS -->
         <section class="terapias" id="terapias">
 
             <div class="conteudo-terapias">
@@ -155,12 +87,13 @@
                     </p>
 
                     <h2>
-                        Tipos de terapia
+                        Principais abordagens da psicoterapia
                     </h2>
 
                     <p>
-                        Cada abordagem possui uma maneira diferente de compreender
-                        experiências, emoções, comportamentos e relações.
+                        Existem diferentes maneiras de compreender emoções,
+                        pensamentos, comportamentos e relações. Conheça algumas
+                        das principais abordagens e entenda como cada uma trabalha.
                     </p>
 
                 </div>
@@ -169,6 +102,7 @@
                 <div class="lista-terapias">
 
 
+                    <!-- TCC -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -184,13 +118,14 @@
                             e comportamentos, utilizando também estratégias práticas.
                         </p>
 
-                        <a href="/frontend/cognitivoComportamental.html" target="_blank">
+                        <a href="/frontend/cognitivoComportamental.html">
                             Saiba mais →
                         </a>
 
                     </article>
 
 
+                    <!-- TERAPIA ANALÍTICO-COMPORTAMENTAL -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -213,6 +148,7 @@
                     </article>
 
 
+                    <!-- TERAPIA DO ESQUEMA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -224,8 +160,8 @@
                         </h3>
 
                         <p>
-                            Explora padrões emocionais profundos desenvolvidos
-                            ao longo da vida e suas necessidades relacionadas.
+                            Explora padrões emocionais desenvolvidos ao longo
+                            da vida e as necessidades relacionadas a eles.
                         </p>
 
                         <a href="#">
@@ -235,6 +171,7 @@
                     </article>
 
 
+                    <!-- PSICANÁLISE FREUDIANA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -257,6 +194,7 @@
                     </article>
 
 
+                    <!-- PSICANÁLISE LACANIANA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -268,8 +206,8 @@
                         </h3>
 
                         <p>
-                            Dá atenção especial à fala, linguagem,
-                            desejo, repetições e construção da subjetividade.
+                            Dá atenção especial à fala, à linguagem,
+                            ao desejo, às repetições e à construção da subjetividade.
                         </p>
 
                         <a href="#">
@@ -279,6 +217,7 @@
                     </article>
 
 
+                    <!-- PSICANÁLISE WINNICOTTIANA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -290,8 +229,8 @@
                         </h3>
 
                         <p>
-                            Trabalha desenvolvimento emocional,
-                            vínculos, ambiente e construção da identidade.
+                            Trabalha desenvolvimento emocional, vínculos,
+                            ambiente e construção da identidade.
                         </p>
 
                         <a href="#">
@@ -301,6 +240,7 @@
                     </article>
 
 
+                    <!-- PSICOLOGIA ANALÍTICA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -323,6 +263,7 @@
                     </article>
 
 
+                    <!-- GESTALT -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -334,8 +275,8 @@
                         </h3>
 
                         <p>
-                            Valoriza a experiência presente,
-                            as emoções, o corpo, a consciência e as relações.
+                            Valoriza a experiência presente, as emoções,
+                            o corpo, a consciência e as relações.
                         </p>
 
                         <a href="#">
@@ -345,6 +286,7 @@
                     </article>
 
 
+                    <!-- ABORDAGEM CENTRADA NA PESSOA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -367,6 +309,7 @@
                     </article>
 
 
+                    <!-- EXISTENCIAL -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -378,8 +321,8 @@
                         </h3>
 
                         <p>
-                            Trabalha escolhas, liberdade,
-                            responsabilidade, angústia e sentido da vida.
+                            Trabalha escolhas, liberdade, responsabilidade,
+                            angústia e sentido da vida.
                         </p>
 
                         <a href="#">
@@ -389,6 +332,7 @@
                     </article>
 
 
+                    <!-- SISTÊMICA -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -411,6 +355,7 @@
                     </article>
 
 
+                    <!-- EMDR -->
                     <article class="cartao-terapia">
 
                         <div class="icone-terapia">
@@ -432,6 +377,61 @@
 
                     </article>
 
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUESTIONÁRIO -->
+        <section class="questionario" id="questionario">
+
+            <div class="conteudo-questionario">
+
+                <div class="texto-questionario">
+
+                    <p class="titulo-pequeno">
+                        Não sabe por onde começar?
+                    </p>
+
+                    <h2>
+                        Encontre abordagens mais próximas do que você procura
+                    </h2>
+
+                    <p>
+                        Cada pessoa pode chegar à terapia com necessidades,
+                        expectativas e objetivos diferentes.
+                    </p>
+
+                    <p>
+                        Nosso questionário considera o que você procura neste
+                        momento para apresentar abordagens cujas características
+                        podem estar mais próximas das suas necessidades atuais.
+                    </p>
+
+                    <p class="aviso-questionario">
+                        O questionário tem caráter informativo. Ele não realiza
+                        diagnóstico, não é um teste psicológico e não substitui
+                        a avaliação de um profissional de psicologia.
+                    </p>
+
+                </div>
+
+
+                <div class="acao-questionario">
+
+                    <p>
+                        Leva poucos minutos.
+                    </p>
+
+                    <h3>
+                        Um ponto de partida para conhecer diferentes caminhos.
+                    </h3>
+
+                    <a href="/frontend/questionario.html" class="botao-questionario">
+                        Responder ao questionário
+                    </a>
 
                 </div>
 
@@ -440,6 +440,7 @@
         </section>
 
 
+        <!-- SOBRE -->
         <section class="sobre" id="sobre">
 
             <div class="conteudo-sobre">
@@ -461,19 +462,35 @@
             </div>
 
         </section>
-        <div class="duvida">
-            <p>
-                Ainda tem dúvidas? <br>
-                Entre em contato conosco que nossos <br>
-                profissionais tentarão te ajudar.
-            </p>
 
-            <a href="/frontend/duvidas.html" class="botao-duvidas" target="_blank">Dúvidas</a>
-        </div>
+
+        <!-- DÚVIDAS -->
+        <section class="duvida">
+
+            <div class="conteudo-duvida">
+
+                <div>
+
+                    <h2>
+                        Ainda tem dúvidas?
+                    </h2>
+
+                    <p>
+                        Encontre informações que podem ajudar você
+                        a entender melhor a psicoterapia e suas abordagens.
+                    </p>
+
+                </div>
+
+                <a href="/frontend/duvidas.html" class="botao-duvidas">
+                    Ver dúvidas frequentes
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
-
-
-
 
 
     <script src="script.js"></script>
