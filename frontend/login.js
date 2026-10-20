@@ -7,7 +7,7 @@ document
     const senhaDigitada = document.getElementById("senha").value;
 
     try {
-      const resposta = await fetch("usuarios.json");
+      const resposta = await fetch("./frontend/usuarios.json");
 
       if (!resposta.ok) {
         throw new Error("Não foi possível carregar o arquivo de usuários.");
@@ -16,7 +16,7 @@ document
       const dados = await resposta.json();
 
       if (usuarioDigitado === dados.usuario && senhaDigitada === dados.senha) {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       } else {
         document.getElementById("mensagem").textContent =
           "Usuário ou senha incorretos.";
