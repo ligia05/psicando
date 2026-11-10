@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicando | Teste de Abordagem Terapêutica</title>
+    <link rel="stylesheet" href="estilo_teste.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="cabecalho">
+            <div class="logo">Psicando</div>
+            <p>Autoconhecimento e psicoterapia</p>
+        </header>
+
+        <section id="inicio" class="card">
+            <h1>Qual abordagem terapêutica combina com você?</h1>
+            <p>
+                Descubra quais linhas da psicologia mais combinam
+                com sua maneira de pensar, sentir e enfrentar desafios.
+            </p>
+            <p>
+                São 18 perguntas, sem respostas certas ou erradas.
+                Ao final, você conhecerá suas três maiores afinidades.
+            </p>
+            <button class="btn-principal" onclick="iniciar()">
+                Começar teste
+            </button>
+        </section>
+
+        <section id="questionario" class="card oculto">
+            <p id="contador"></p>
+
+            <div class="barra-progresso">
+                <div id="progresso"></div>
+            </div>
+
+            <h2 id="pergunta"></h2>
+            <div id="alternativas"></div>
+
+            <div class="navegacao">
+                <button class="btn-secundario" onclick="voltar()">
+                    Anterior
+                </button>
+                <button id="botao-proximo" class="btn-principal" onclick="avancar()">
+                    Próxima
+                </button>
+            </div>
+        </section>
+
+        <section id="resultado" class="card oculto">
+            <h1>Seu perfil terapêutico</h1>
+            <p id="resumo"></p>
+            <div id="ranking"></div>
+
+            <div class="aviso">
+                Este teste é exploratório e não substitui uma
+                avaliação profissional. As porcentagens indicam
+                afinidade relativa entre as três abordagens
+                mais pontuadas, e não eficácia clínica.
+            </div>
+
+            <div class="acoes">
+                <button class="btn-principal" onclick="reiniciar()">
+                    Refazer teste
+                </button>
+                <button class="btn-secundario" onclick="window.print()">
+                    Imprimir resultado
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        "use strict";
+
+        const abordagens = {
+            tcc: {
+                nome: "Terapia Cognitivo-Comportamental",
+                descricao: "Trabalha pensamentos, emoções e comportamentos, utilizando estratégias práticas e objetivos definidos."
+            },
+            tac: {
+                nome: "Terapia Analítico-Comportamental",
+                descricao: "Investiga as relações entre comportamento, ambiente, história de aprendizagem e consequências das ações."
+            },
+            esquema: {
+                nome: "Terapia do Esquema",
+                descricao: "Explora padrões emocionais persistentes, necessidades afetivas e experiências antigas."
+            },
+            freud: {
+                nome: "Psicanálise Freudiana",
+                descricao: "Investiga conflitos inconscientes, desejos, defesas e experiências presentes na história pessoal."
+            },
+            lacan: {
+                nome: "Psicanálise Lacaniana",
+                descricao: "Explora a linguagem, o desejo e a maneira singular como a pessoa constrói sua história."
+            },
+            winnicott: {
+                nome: "Psicanálise Winnicottiana",
+                descricao: "Valoriza o ambiente emocional, o acolhimento, a espontaneidade e a autenticidade."
+            },
+            jung: {
+                nome: "Psicologia Analítica",
+                descricao: "Explora sonhos, símbolos, imagens e o processo de individuação."
+            },
+            gestalt: {
+                nome: "Gestalt-terapia",
+                descricao: "Trabalha a consciência das emoções, sensações e experiências do momento presente."
+            },
+            acp: {
+                nome: "Abordagem Centrada na Pessoa",
+                descricao: "Valoriza empatia, autenticidade, aceitação e autonomia na relação terapêutica."
+            },
+            existencial: {
+                nome: "Abordagem Existencial",
+                descricao: "Investiga liberdade, responsabilidade, escolhas, identidade e sentido da vida."
+            },
+            sistemica: {
+                nome: "Terapia Sistêmica",
+                descricao: "Compreende dificuldades a partir de relações, padrões de comunicação e contextos familiares e sociais."
+            }
+        };
